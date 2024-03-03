@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.main-section {
+  background-color: rgb(226, 216, 216);
+  height: 100vh;
+}
+
+.main-section__header {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.main-section__header__menu {
+  display: none;
+}
+
+.main-section__hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 657px;
+}
+
+.main-section__hero__title {
+  max-width: 250px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2rem;
+  margin-top: 50px;
+}
+
+.aboutme {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 450px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+}
+
+.aboutme__bio {
+  margin: 0;
+  padding: 0 30px;
+}
+
+.checkmark--big {
+  display: none;
+}
+
+.sub-section-title {
+  margin: 0;
+  text-align: center;
+  padding: 40px;
+}
+
+.services__description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services__info {
+  margin-top: 0;
+  margin-bottom: 60px;
+  text-align: center;
+  max-width: 250px;
+}
+
+.contact {
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+
+.fieldset label {
+  display: block;
+  font-size: 0.7rem;
+}
+
+.fieldset input {
+  appearance: none;
+  font-size: 1.5rem;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+#user-message {
+  font-size: 3.5rem;
+}
+
+.contact__button {
+  background-color: rgb(240, 202, 99);
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+
+.footer {
+  background-color: rgb(146, 146, 146);
+  height: 400px;
+  padding: 20px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.footer__copyright {
+  font-size: 0.7rem;
+}
+
+.socials__links {
+  padding: 10px 0;
+  text-decoration: none;
+  color: black;
+}
+
+.ig-link::before {
+  content: url("icons/instagram.png");
+  margin-right: 5px;
+}
+
+.li-link::before {
+  content: url("icons/linkedin.png");
+  margin-right: 5px;
+}
+.gh-link::before {
+  content: url("icons/github.png");
+  margin-right: 5px;
+}
+
+@media (min-width: 960px) {
+  .main-section__header__burguer {
+    display: none;
+  }
+
+  .main-section__header__menu {
+    display: initial;
+  }
+
+  .main-section {
+    height: 500px;
+    padding: 30px 40px;
+  }
+
+  .main-section__header {
+    padding: 0;
+  }
+
+  .main-section__hero {
+    height: 420px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-section__hero__title {
+    align-self: start;
+    margin-top: 150px;
+  }
+
+  .main-section__hero__portrait {
+    align-self: end;
+  }
+
+  .aboutme {
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+
+  .aboutme__fulltext {
+    width: 400px;
+    margin-left: 20px;
+  }
+
+  .aboutme__fulltext .sub-section-title {
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 20px;
+    padding-left: 30px;
+  }
+
+  .checkmark--small {
+    display: none;
+  }
+
+  .checkmark--big {
+    display: initial;
+  }
+
+  .services__columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact {
+    display: flex;
+    justify-content: center;
+    padding: 70px 0;
+  }
+  .contact .sub-section-title {
+    padding-top: 0;
+  }
+
+  .contact-form {
+    max-width: 300px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+  }
+
+  .socials {
+    margin: 0;
+    padding-right: 40px;
+  }
+}
