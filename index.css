@@ -149,7 +149,15 @@ body {
   }
 
   .main-section__header__menu {
-    display: initial;
+    display: flex;
+    min-width: 250px;
+    justify-content: space-between;
+    font-weight: bold;
+  }
+
+  .main-section__header__menu a {
+    text-decoration: none;
+    color: black;
   }
 
   .main-section {
@@ -159,6 +167,7 @@ body {
 
   .main-section__header {
     padding: 0;
+    align-items: center;
   }
 
   .main-section__hero {
